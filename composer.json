@@ -18,7 +18,7 @@
         {
             "type": "package",
             "package": {
-                "name": "icarus/icarus-drupal-7-theme",
+                "name": "drupal/icarus-drupal-7-theme",
                 "version": "master",
                 "type": "drupal-theme",
                 "dist": {
@@ -48,7 +48,10 @@
         "drupal/token": "7.1.6",
         "drupal/views": "7.3.14",
         "drupal/views_bulk_operations": "7.3.3",
-        "drupal/wysiwyg": "7.2.2"
+        "drupal/wysiwyg": "7.2.2",
+        "drupal/adminimal_theme": "7.1.24",
+        "drupal/zen": "7.6.4",
+        "drupal/icarus-drupal-7-theme":"dev-master"
     },
     "require-dev": {},
     "extra": {
