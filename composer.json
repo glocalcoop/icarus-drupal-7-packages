@@ -18,7 +18,7 @@
         {
             "type": "package",
             "package": {
-                "name": "drupal/icarus-drupal-7-theme",
+                "name": "drupal/icarus",
                 "version": "master",
                 "type": "drupal-theme",
                 "dist": {
@@ -31,34 +31,60 @@
                     "reference": "master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "custom/owstech_share",
+                "version": "master",
+                "type": "drupal-module",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/thiagodemellobueno/owstech_share/archive/master.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/thiagodemellobueno/owstech_share.git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
-        "drupal/admin_menu": "^7.3.0-rc5",
-        "drupal/admin_views": "7.1.6",
-        "drupal/block_class": "7.2.3",
-        "drupal/captcha": "7.1.3",
-        "drupal/ctools": "7.1.10",
+        "drupal/admin_menu": "7.3.0-rc5",
+        "drupal/admin_views": "7.1.3",
+        "drupal/block_class": "7.2.1",
+        "drupal/captcha": "7.1.2",
+        "drupal/ctools": "7.1.7",
         "drupal/devel": "7.1.5",
-        "drupal/entity": "7.1.7",
+        "drupal/entity": "7.1.6",
         "drupal/media": "^7.2.0-beta2",
-        "drupal/pathauto": "7.1.3",
+        "drupal/pathauto": "7.1.2",
         "drupal/taxonomy_csv": "7.5.10",
         "drupal/taxonomy_manager": "7.1.0",
-        "drupal/token": "7.1.6",
-        "drupal/views": "7.3.14",
-        "drupal/views_bulk_operations": "7.3.3",
+        "drupal/token": "7.1.5",
+        "drupal/views": "7.3.10",
+        "drupal/views_bulk_operations": "7.3.2",
         "drupal/wysiwyg": "7.2.2",
-        "drupal/adminimal_theme": "7.1.24",
+        "drupal/adminimal_theme": "7.1.19",
         "drupal/zen": "7.6.4",
-        "drupal/icarus-drupal-7-theme":"dev-master"
+        "drupal/icarus": "dev-master",
+        "custom/owstech_share": "dev-master"
     },
-    "require-dev": {},
+    "require-dev": {
+            "drupal/module_filter": "7.2.0"
+    },
     "extra": {
         "installer-paths": {
-            "./sites/all/modules/": ["type:drupal-module"],
-            "./sites/all/themes/": ["type:drupal-theme"],
-            "./profiles/contrib/": ["type:drupal-profile"]
+            "sites/all/modules/": [
+                "type:drupal-module"
+            ],
+            "sites/all/themes/": [
+                "type:drupal-theme"
+            ],
+            "profiles/contrib/": [
+                "type:drupal-profile"
+            ]
         }
     }
 }
