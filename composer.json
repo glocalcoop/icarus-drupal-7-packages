@@ -23,11 +23,11 @@
                 "type": "drupal-theme",
                 "dist": {
                     "type": "zip",
-                    "url": "https://git.glocal.coop/icarus/icarus-drupal-7-theme/repository/archive.zip"
+                    "url": "https://github.com/glocalcoop/icarus-drupal-7-theme/archive/master.zip"
                 },
                 "source": {
                     "type": "git",
-                    "url": "git@git.glocal.coop:icarus/icarus-drupal-7-theme.git",
+                    "url": "https://github.com/glocalcoop/icarus-drupal-7-theme.git",
                     "reference": "master"
                 }
             }
